@@ -32,6 +32,8 @@ Managing an orphanage is a complex task involving a wide range of data — from 
   Structured and secure access to sensitive data.
 
 ## Tech Stack
-**Frontend** HTML,CSS,Javascripts
+**Frontend** HTML, CSS, JavaScript
+
 **Backend** PHP
+
 **Database** MySQL
