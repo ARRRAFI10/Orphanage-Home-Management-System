@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Orphan and Guardian Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        h2 {
+            color: #333333;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .column {
+            width: 100%;
+            padding: 30px;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: #4CAF50;
+            color: #ffffff;
+            cursor: pointer;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column">
+            <h2>Orphan Registration Form</h2>
+            <form method="POST" action="RegisterOrphanAndGuardian.php">
+                <div class="form-group">
+                    <label for="orphan_firstname">Orphan Full Name:</label>
+                    <input type="text" id="orphan_firstname" name="orphan_firstname" placeholder="Write orphan's full name here...">
+                </div>
+
+                <div class="form-group">
+                    <label for="orphan_gender">Orphan Gender:</label>
+                    <select id="orphan_gender" name="orphan_gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="orphan_event-time">Orphan Date of Birth:</label>
+                    <input type="datetime-local" id="orphan_event-time" name="orphan_event-time" placeholder="Enter orphan's date of birth...">
+                </div>
+
+                <div class="form-group">
+                    <label for="orphan_group">Orphan Blood Group:</label>
+                    <select id="orphan_group" name="orphan_group">
+                        <option value="A+">A+</option>
+                        <option value="B+">B+</option>
+                        <option value="O+">O+</option>
+                        <option value="AB+">AB+</option>
+                        <option value="A-">A-</option>
+                        <option value="B-">B-</option>
+                        <option value="O-">O-</option>
+                        <option value="AB-">AB-</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="orphan_description">Orphan Description:</label>
+                    <input type="text" id="orphan_description" name="orphan_description" placeholder="Enter some description...">
+                </div>
+            </div>
+
+            <div class="column">
+                <h2>Guardian Registration Form</h2>
+                <div class="form-group">
+                    <label for="guardian_firstname">Guardian Full Name:</label>
+                    <input type="text" id="guardian_firstname" name="guardian_firstname" placeholder="Write guardian's full name here...">
+                </div>
+
+                <div class="form-group">
+                    <label for="guardian_houseno">Guardian House No.:</label>
+                    <input type="text" id="guardian_houseno" name="guardian_houseno" placeholder="Enter guardian's House No...">
+                </div>
+
+                <div class="form-group">
+                    <label for="guardian_roadno">Guardian Road No.:</label>
+                    <input type="text" id="guardian_roadno" name="guardian_roadno" placeholder="Enter guardian's Road No...">
+                </div>
+
+                <div class="form-group">
+                    <label for="guardian_area">Guardian Area:</label>
+                    <input type="text" id="guardian_area" name="guardian_area" placeholder="Enter guardian's Area...">
+                </div>
+
+                <div class="form-group">
+                    <label for="guardian_district">Guardian District:</label>
+                    <input type="text" id="guardian_district" name="guardian_district" placeholder="Enter guardian's District...">
+                </div>
+
+                <div class="form-group">
+                    <label for="guardian_relation">Relation with Orphan:</label>
+                    <input type="text" id="guardian_relation" name="guardian_relation" placeholder="Enter the relation with orphan...">
+                </div>
+
+                <div class="form-group">
+                    <label for="adoptive_parent">Adoptive Parent:</label>
+                    <select id="adoptive_parent" name="adoptive_parent">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="adoption_date">Adoption Date:</label>
+                    <input type="date" id="adoption_date" name="adoption_date">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group" style="text-align: center;">
+            <input type="submit" value="Submit" style="padding: 6px 12px;">
+        </div>
+    </form>
+</body>
+</html>

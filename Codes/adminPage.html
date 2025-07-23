@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Page</title>
+  <meta charset="UTF-8">
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .section {
+      flex: 1;
+      padding: 20px;
+      text-align: center;
+      border-radius: 4px;
+    }
+
+    .left-section {
+      background-color: #F9F4E7;
+    }
+
+    .right-section {
+      background-color: #E7F4F9;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #333;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .options {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .option-card {
+      width: 200px;
+      padding: 20px;
+      background-color: #f5f5f5;
+      border-radius: 4px;
+      text-decoration: none;
+      color: #333;
+      transition: background-color 0.3s ease;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .option-card:hover {
+      background-color: #e0e0e0;
+    }
+
+    .option-card .icon {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .option-card .image {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+    <div class="section left-section">
+      <h2>Registration Options</h2>
+      <div class="options">
+        <a href="RegisterOrphanAndGuardian.html" class="option-card">
+          <span class="icon">👧</span>
+          Register an Orphan
+        </a>
+        <a href="RegisterDoctor.html" class="option-card">
+          <span class="icon">👩‍⚕️</span>
+          Register a Doctor
+        </a>
+        <a href="RegisterTeacher.html" class="option-card">
+          <span class="icon">👨‍🏫</span>
+          Register a Teacher
+        </a>
+        <a href="RegisterStuff.html" class="option-card">
+          <span class="icon">👨‍💼</span>
+          Register Stuff
+        </a>
+      </div>
+    </div>
+    <div class="section right-section">
+      <h2>Information Display Options</h2>
+      <div class="options">
+        <a href="showOrphan.php" class="option-card">
+          <span class="icon">📋</span>
+          Show Orphans Information
+        </a>
+        <a href="showStaff.php" class="option-card">
+          <span class="icon">👨‍💼</span>
+          Show Staff Information
+        </a>
+        <a href="showTeacher.php" class="option-card">
+          <span class="icon">👨‍🏫</span>
+          Show Teachers Information
+        </a>
+        <a href="showDoctor.php" class="option-card">
+          <span class="icon">👩‍⚕️</span>
+          Show Doctors Information
+        </a>
+        <a href="showTransection.php" class="option-card">
+          <span class="icon">💰</span>
+          Show Transaction Information
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

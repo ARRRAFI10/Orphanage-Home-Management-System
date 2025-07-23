@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Class Routine</title>
+  <style>
+     table {
+      border-collapse: collapse;
+      width: 100%;
+      border: 1px solid #dddddd;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #dddddd;
+    }
+    th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .time-column {
+      font-weight: bold;
+    }
+    .subject-cell {
+      font-weight: bold;
+      color: #333;
+    }
+    .highlight {
+  background-color: yellow;
+  font-weight: bold;
+}
+  </style>
+</head>
+<body>
+  <h1>Class Routine</h1>
+  <div>
+    <input type="text" id="searchInput" placeholder="Search Teacher...">
+    <button onclick="searchRoutine()">Search</button>
+  </div>
+  <h2>Sunday</h2>
+  <table id="routineTable1">
+    <tr>
+      <th>Time</th>
+      <th>Grade 1</th>
+      <th>Grade 2</th>
+      <th>Grade 3</th>
+      <th>Grade 4</th>
+      <th>Grade 5</th>
+    </tr>
+    <tr>
+      <td>8:00 AM</td>
+      <td>Math (Mr. Ali)</td>
+      <td>Bengali (Mrs. Khan)</td>
+      <td>Science (Mr. Rahman)</td>
+      <td>English (Mrs. Ahmed)</td>
+      <td>Arabic (Mr. Hassan)</td>
+    </tr>
+    <tr>
+        <td>9:00 AM</td>
+        <td>English (Mrs. Ahmed)</td>
+        <td>Geography (Mrs. Islam)</td>
+        <td>Math (Mr. Ali)</td>
+        <td>Arabic (Mr. Hassan)</td>
+        <td>Science (Mrs. Khan)</td>
+      </tr>
+      <tr>
+        <td>10:00 AM</td>
+        <td>Science (Mr. Rahman)</td>
+        <td>Math (Mr. Ali)</td>
+        <td>English (Mrs. Ahmed)</td>
+        <td>Geography (Mrs. Khan)</td>
+        <td>Arabic (Mr. Hassan)</td>
+      </tr>
+      <tr>
+        <td>11:00 AM</td>
+        <td>Arabic (Mr. Hassan)</td>
+        <td>Science (Mrs. Khan)</td>
+        <td>Bengali (Mrs. Ahmed)</td>
+        <td>Math (Mr. Rahman)</td>
+        <td>Geography (Mrs. Islam)</td>
+      </tr>
+      <tr>
+        <td>12:00 PM</td>
+        <td>Bengali (Mrs. Khan)</td>
+        <td>Arabic (Mr. Hassan)</td>
+        <td>Math (Mr. Rahman)</td>
+        <td>Science (Mrs. Ahmed)</td>
+        <td>English (Mr. Hassan)</td>
+      </tr>
+      <tr>
+        <td>1:00 PM</td>
+        <td>Geography (Mrs. Islam)</td>
+        <td>English (Mrs. Ahmed)</td>
+        <td>Science (Mr. Rahman)</td>
+        <td>Math (Mr. Ali)</td>
+        <td>Bengali (Mrs. Khan)</td>
+      </tr>
+    <!-- Add the remaining rows for Sunday here -->
+  </table>
+
+  <h2>Monday</h2>
+  <table id="routineTable2">
+    <tr>
+      <th>Time</th>
+      <th>Grade 1</th>
+      <th>Grade 2</th>
+      <th>Grade 3</th>
+      <th>Grade 4</th>
+      <th>Grade 5</th>
+    </tr>
+    <tr>
+      <td>8:00 AM</td>
+      <td>Math (Mr. Ali)</td>
+      <td>Bengali (Mrs. Khan)</td>
+      <td>Science (Mr. Rahman)</td>
+      <td>English (Mrs. Ahmed)</td>
+      <td>Arabic (Mr. Hassan)</td>
+      <tr>
+        <td>10:00 AM</td>
+        <td>Science (Mr. Rahman)</td>
+        <td>Math (Mr. Ali)</td>
+        <td>English (Mrs. Ahmed)</td>
+        <td>Geography (Mrs. Khan)</td>
+        <td>Arabic (Mr. Hassan)</td>
+      </tr>
+      <tr>
+        <td>11:00 AM</td>
+        <td>Arabic (Mr. Hassan)</td>
+        <td>Science (Mrs. Khan)</td>
+        <td>Bengali (Mrs. Ahmed)</td>
+        <td>Math (Mr. Rahman)</td>
+        <td>Geography (Mrs. Islam)</td>
+      </tr>
+      <tr>
+        <td>12:00 PM</td>
+        <td>Bengali (Mrs. Khan)</td>
+        <td>Arabic (Mr. Hassan)</td>
+        <td>Math (Mr. Rahman)</td>
+        <td>Science (Mrs. Ahmed)</td>
+        <td>English (Mr. Hassan)</td>
+      </tr>
+      <tr>
+        <td>1:00 PM</td>
+        <td>Geography (Mrs. Islam)</td>
+        <td>English (Mrs. Ahmed)</td>
+        <td>Science (Mr. Rahman)</td>
+        <td>Math (Mr. Ali)</td>
+        <td>Bengali (Mrs. Khan)</td>
+      </tr>
+    </tr>
+    <!-- Add the remaining rows for Monday here -->
+  </table>
+  <h2>Tuesday</h2>
+  <table id="routineTable3">
+    <tr>
+      <th>Time</th>
+      <th>Grade 1</th>
+      <th>Grade 2</th>
+      <th>Grade 3</th>
+      <th>Grade 4</th>
+      <th>Grade 5</th>
+    </tr>
+    <tr>
+      <td>8:00 AM</td>
+      <td>Math (Mr. Ali)</td>
+      <td>Science (Mrs. Khan)</td>
+      <td>Bengali (Mr. Rahman)</td>
+      <td>English (Mrs. Ahmed)</td>
+      <td>Arabic (Mr. Hassan)</td>
+    </tr>
+    <tr>
+        <td>9:00 AM</td>
+        <td>Math (Mr. Ali)</td>
+        <td>Science (Mrs. Khan)</td>
+        <td>English (Mrs. Ahmed)</td>
+        <td>Geography (Mrs. Islam)</td>
+        <td>Arabic (Mr. Hassan)</td>
+      </tr>
+      <tr>
+        <td>10:00 AM</td>
+        <td>English (Mrs. Ahmed)</td>
+        <td>Geography (Mrs. Islam)</td>
+        <td>Math (Mr. Rahman)</td>
+        <td>Arabic (Mr. Hassan)</td>
+        <td>Science (Mrs. Khan)</td>
+      </tr>
+      <tr>
+        <td>11:00 AM</td>
+        <td>Arabic (Mr. Hassan)</td>
+        <td>Science (Mrs. Khan)</td>
+        <td>Bengali (Mrs. Ahmed)</td>
+        <td>Math (Mr. Rahman)</td>
+        <td>English (Mr. Hassan)</td>
+      </tr>
+      <tr>
+        <td>12:00 PM</td>
+        <td>Bengali (Mrs. Khan)</td>
+        <td>Arabic (Mr. Hassan)</td>
+        <td>Math (Mr. Rahman)</td>
+        <td>Science (Mrs. Ahmed)</td>
+        <td>Geography (Mrs. Islam)</td>
+      </tr>
+      <tr>
+        <td>1:00 PM</td>
+        <td>Geography (Mrs. Islam)</td>
+        <td>English (Mrs. Ahmed)</td>
+        <td>Science (Mr. Rahman)</td>
+        <td>Math (Mr. Ali)</td>
+        <td>Bengali (Mrs. Khan)</td>
+      </tr>
+    <!-- Add the remaining rows for Tuesday here -->
+  </table>
+
+  <h2>Wednesday</h2>
+  <table id="routineTable4">
+    <tr>
+      <th>Time</th>
+      <th>Grade 1</th>
+      <th>Grade 2</th>
+      <th>Grade 3</th>
+      <th>Grade 4</th>
+      <th>Grade 5</th>
+    </tr>
+    <tr>
+      <td>8:00 AM</td>
+      <td>Math (Mr. Ali)</td>
+      <td>Bengali (Mrs. Khan)</td>
+      <td>Science (Mr. Rahman)</td>
+      <td>English (Mrs. Ahmed)</td>
+      <td>Arabic (Mr. Hassan)</td>
+    </tr>
+    <tr>
+        <td>9:00 AM</td>
+        <td>Math (Mr. Ali)</td>
+        <td>Science (Mrs. Khan)</td>
+        <td>English (Mrs. Ahmed)</td>
+        <td>Geography (Mrs. Islam)</td>
+        <td>Arabic (Mr. Hassan)</td>
+      </tr>
+      <tr>
+        <td>10:00 AM</td>
+        <td>English (Mrs. Ahmed)</td>
+        <td>Geography (Mrs. Islam)</td>
+        <td>Math (Mr. Rahman)</td>
+        <td>Arabic (Mr. Hassan)</td>
+        <td>Science (Mrs. Khan)</td>
+      </tr>
+      <tr>
+        <td>11:00 AM</td>
+        <td>Arabic (Mr. Hassan)</td>
+        <td>Science (Mrs. Khan)</td>
+        <td>Bengali (Mrs. Ahmed)</td>
+        <td>Math (Mr. Rahman)</td>
+        <td>English (Mr. Hassan)</td>
+      </tr>
+      <tr>
+        <td>12:00 PM</td>
+        <td>Bengali (Mrs. Khan)</td>
+        <td>Arabic (Mr. Hassan)</td>
+        <td>Math (Mr. Rahman)</td>
+        <td>Science (Mrs. Ahmed)</td>
+        <td>Geography (Mrs. Islam)</td>
+      </tr>
+      <tr>
+        <td>1:00 PM</td>
+        <td>Geography (Mrs. Islam)</td>
+        <td>English (Mrs. Ahmed)</td>
+        <td>Science (Mr. Rahman)</td>
+        <td>Math (Mr. Ali)</td>
+        <td>Bengali (Mrs. Khan)</td>
+      </tr>
+    <!-- Add the remaining rows for Wednesday here -->
+  </table>
+  <h2>Thursday</h2>
+  <table id="routineTable5">
+    <tr>
+      <th>Time</th>
+      <th>Grade 1</th>
+      <th>Grade 2</th>
+      <th>Grade 3</th>
+      <th>Grade 4</th>
+      <th>Grade 5</th>
+    </tr>
+    <tr>
+      <td>8:00 AM</td>
+      <td>Science (Mr. Rahman)</td>
+      <td>Bengali (Mrs. Khan)</td>
+      <td>Math (Mr. Ali)</td>
+      <td>Arabic (Mr. Hassan)</td>
+      <td>English (Mrs. Ahmed)</td>
+    </tr>
+    <tr>
+        <td>9:00 AM</td>
+        <td>English (Mrs. Ahmed)</td>
+        <td>Geography (Mrs. Islam)</td>
+        <td>Math (Mr. Rahman)</td>
+        <td>Arabic (Mr. Hassan)</td>
+        <td>Science (Mrs. Khan)</td>
+      </tr>
+      <tr>
+        <td>10:00 AM</td>
+        <td>Science (Mr. Rahman)</td>
+        <td>Math (Mr. Ali)</td>
+        <td>English (Mrs. Ahmed)</td>
+        <td>Geography (Mrs. Khan)</td>
+        <td>Arabic (Mr. Hassan)</td>
+      </tr>
+      <tr>
+        <td>11:00 AM</td>
+        <td>Arabic (Mr. Hassan)</td>
+        <td>Science (Mrs. Khan)</td>
+        <td>Bengali (Mrs. Ahmed)</td>
+        <td>Math (Mr. Rahman)</td>
+        <td>Geography (Mrs. Islam)</td>
+      </tr>
+      <tr>
+        <td>12:00 PM</td>
+        <td>Bengali (Mrs. Khan)</td>
+        <td>Arabic (Mr. Hassan)</td>
+        <td>Math (Mr. Rahman)</td>
+        <td>Science (Mrs. Ahmed)</td>
+        <td>English (Mr. Hassan)</td>
+      </tr>
+      <tr>
+        <td>1:00 PM</td>
+        <td>Geography (Mrs. Islam)</td>
+        <td>English (Mrs. Ahmed)</td>
+        <td>Science (Mr. Rahman)</td>
+        <td>Math (Mr. Ali)</td>
+        <td>Bengali (Mrs. Khan)</td>
+      </tr>
+    <!-- Add the remaining rows for Thursday here -->
+  </table>
+  <script>
+    function searchRoutine() {
+      var input = document.getElementById("searchInput").value.toLowerCase();
+  
+      // Search routine for table 1
+      var table1 = document.getElementById("routineTable1");
+      searchTable(table1, input);
+  
+      // Search routine for table 2
+      var table2 = document.getElementById("routineTable2");
+      searchTable(table2, input);
+  
+      var table3 = document.getElementById("routineTable3");
+      searchTable(table3, input);
+  
+      var table4 = document.getElementById("routineTable4");
+      searchTable(table4, input);
+  
+      var table5 = document.getElementById("routineTable5");
+      searchTable(table5, input);
+  
+      // Add more table search calls as needed
+    }
+  
+    function searchTable(table, input) {
+      var rows = table.getElementsByTagName("tr");
+  
+      for (var i = 0; i < rows.length; i++) {
+        var cells = rows[i].getElementsByTagName("td");
+        var rowVisible = false;
+  
+        for (var j = 0; j < cells.length; j++) {
+          var teacherName = cells[j].innerText.toLowerCase();
+          var cell = cells[j];
+  
+          if (teacherName.includes(input)) {
+            cell.classList.add("highlight");
+            rowVisible = true;
+          } else {
+            cell.classList.remove("highlight");
+          }
+        }
+  
+        rows[i].style.display = rowVisible ? "" : "none";
+      }
+    }
+  </script>
+  
+
+  
+
+</body>
+</html>

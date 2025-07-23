@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <h1 class="heading"><b><b>Orphan Registration Form</b></b></h1>
+</head>
+<link rel="stylesheet" type="text/css" href="RegisterOrphan.css">
+<body>
+    <div class="container">
+  <form action="RegisterOrphanConnection.php" method="post">
+
+    
+    <label for="fname"><b>Full Name:</b></label>
+    <input type="text" id="fname" name="firstname" placeholder="Write your full name here...">
+   
+    <label for="Gender"><b>Gender:</b></label>
+    <select id="gender" name="gender">
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+    </select>
+
+    <label for="event-time"><b>Date of Birth:</b></label>
+    <input type="datetime-local" id="event-time" name="event-time" placeholder="Enter the date...">
+    
+    <label for="Blood Group"><b>Blood Group:</b></label>
+    <select id="group" name="group">
+      <option value="A+">A+</option>
+      <option value="B+">B+</option>
+      <option value="O+">O+</option>
+      <option value="AB+">AB+</option>
+      <option value="A-">A-</option>
+      <option value="B-">B-</option>
+      <option value="O-">O-</option>
+      <option value="AB-">AB-</option>
+    </select>
+
+    <label for="Description"><b>Description:</b></label>
+    <input type="text" id="description" name="description" placeholder="Enter some description...">
+    
+
+    <div class="centered-button">
+      <button><input type="submit" value="Submit"></button>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>

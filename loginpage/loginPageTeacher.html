@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Teacher Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .background-image {
+      flex: 1;
+      background-color: #281a57;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 20px; /* Adjust the margin as needed */
+    }
+
+    .background-image img {
+      width: 200px;
+      height: auto;
+    }
+
+    .background-text {
+      color: #fff;
+      font-size: 24px;
+      text-align: center;
+      margin-top: 10px; /* Adjust the margin as needed */
+    }
+
+    .login-form {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .login-box {
+      max-width: 400px;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    h2::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50px;
+      height: 2px;
+      background-color: #333;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      border-radius: 4px;
+    }
+
+    .password-container {
+      position: relative;
+    }
+
+    .password-toggle {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+
+    .password-toggle img {
+      width: 20px;
+      height: 20px;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      background-color: #4caf50;
+      color: #fff;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    .error-message {
+      color: red;
+      margin-top: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="background-image">
+      <img src="Orphan2.png" alt="Orphan Image">
+      <div class="background-text">
+        <h3>Welcome to the Teacher Page</h3>
+      </div>
+    </div>
+    <div class="login-form">
+      <div class="login-box">
+        <h2>Teacher Login</h2>
+        <form action="routine.html" method="post">
+          <label for="userid">User ID:</label>
+          <input type="text" id="userid" name="username" placeholder="Username" required>
+          <label for="password">Password:</label>
+          <div class="password-container">
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <span class="password-toggle" onclick="togglePasswordVisibility()">
+              <img src="eye.jpg" alt="Toggle Password Visibility">
+            </span>
+          </div>
+          <input type="submit" value="Login">
+        </form>
+        <p class="error-message"></p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function togglePasswordVisibility() {
+      var passwordInput = document.getElementById("password");
+      var passwordToggle = document.querySelector(".password-toggle");
+
+      if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        passwordToggle.innerHTML = '<img src="eyenai.png" alt="Toggle Password Visibility">';
+      } else {
+        passwordInput.type = "password";
+        passwordToggle.innerHTML = '<img src="eye.jpg" alt="Toggle Password Visibility">';
+      }
+    }
+  </script>
+</body>
+</html>

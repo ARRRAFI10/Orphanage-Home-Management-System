@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .heading {
+        text-align: center;
+    }
+
+    label {
+        display: block;
+        margin-top: 10px;
+    }
+
+    input[type="text"],
+    select,
+    input[type="datetime-local"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+    }
+
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+
+    .centered-button {
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1 class="heading"><b>Teacher Registration Form</b></h1>
+    <form action="teacherRegistration.php" method="post">
+
+        <label for="fname"><b>Teacher Name:</b></label>
+        <input type="text" id="fname" name="teachername" placeholder="Write full name here...">
+
+        <label for="designation"><b>Educational Qualification:</b></label>
+        <input type="text" id="event-time" name="eduQualification" placeholder="Enter the Educational Qualification ...">
+
+        <label for="designation"><b>Subject:</b></label>
+        <input type="text" id="event-time" name="subject" placeholder="Enter the Subject...">
+        
+
+        <label for="event-time"><b>Joining Date:</b></label>
+        <input type="datetime-local" id="event-time" name="joiningdate" placeholder="Enter the joining date...">
+
+        <label for="salary"><b>Salary:</b></label>
+        <input type="text" id="salary" name="salary" placeholder="Enter the salary...">
+
+        <label for="house_no"><b>House No.:</b></label>
+        <input type="text" id="house_no" name="houseno" placeholder="Enter house no..">
+
+        <label for="road_no"><b>Road No.:</b></label>
+        <input type="text" id="road_no" name="roadno" placeholder="Enter Road No...">
+
+        <label for="area"><b>Area:</b></label>
+        <input type="text" id="area" name="area" placeholder="Enter area...">
+
+        <label for="district"><b>District:</b></label>
+        <input type="text" id="district" name="district" placeholder="Enter district...">
+
+        <label for="contact"><b>Contact:</b></label>
+        <input type="text" id="contact" name="contact" placeholder="Enter contact...">
+
+        <div class="centered-button">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
